@@ -53,7 +53,7 @@ export const tools: Tool[] = [
     name: "LinkClean",
     desc: "Strip trackers and junk params from any link in a single click.",
     icon: Link2,
-    url: "https://linkclean.vercel.app",
+    url: "https://linkclean-seven.vercel.app",
   },
   {
     name: "FileBeam",
