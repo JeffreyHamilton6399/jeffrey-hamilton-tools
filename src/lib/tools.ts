@@ -58,7 +58,7 @@ export const tools: Tool[] = [
     name: "FileBeam",
     desc: "Beam files straight between your devices—no server, no cloud, no middleman.",
     icon: Send,
-    url: "https://filebeam-delta.vercel.app",
+    url: "https://filebeam-ten.vercel.app",
   },
   {
     name: "BlurIt",
