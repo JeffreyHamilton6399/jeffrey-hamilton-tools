@@ -7,6 +7,7 @@ import {
   Link2,
   Send,
   EyeOff,
+  Files,
   type LucideIcon,
 } from "lucide-react"
 
@@ -65,5 +66,11 @@ export const tools: Tool[] = [
     desc: "Blur faces and sensitive details in photos before you share them.",
     icon: EyeOff,
     url: "https://blurit-lime.vercel.app",
+  },
+  {
+    name: "MergePDF",
+    desc: "Merge, split, and rearrange PDF pages with drag-and-drop—no uploads, no sign-up, no ads.",
+    icon: Files,
+    url: "https://merge-pdf-bice.vercel.app",
   },
 ]
