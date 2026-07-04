@@ -9,6 +9,7 @@ import {
   EyeOff,
   Files,
   Swords,
+  Newspaper,
   type LucideIcon,
 } from "lucide-react"
 
@@ -79,5 +80,11 @@ export const tools: Tool[] = [
     desc: "Sharpen your thinking. Spar with AI personas—Devil's Advocate, Steel-Man, Writing Coach, and more.",
     icon: Swords,
     url: "https://counterpoint-six.vercel.app",
+  },
+  {
+    name: "Bulletin",
+    desc: "Browse and post local classifieds—for sale, housing, jobs, and more. No account required.",
+    icon: Newspaper,
+    url: "https://bulletin-classifieds.vercel.app",
   },
 ]
