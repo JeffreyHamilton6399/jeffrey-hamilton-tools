@@ -8,6 +8,7 @@ import {
   Send,
   EyeOff,
   Files,
+  AudioWaveform,
   type LucideIcon,
 } from "lucide-react"
 
@@ -72,5 +73,11 @@ export const tools: Tool[] = [
     desc: "Merge, split, and rearrange PDF pages with drag-and-drop—no uploads, no sign-up, no ads.",
     icon: Files,
     url: "https://merge-pdf-bice.vercel.app",
+  },
+  {
+    name: "VoiceRip",
+    desc: "Split any song into vocals, drums, bass, and music—right in your browser. No uploads.",
+    icon: AudioWaveform,
+    url: "https://voicerip.vercel.app",
   },
 ]
