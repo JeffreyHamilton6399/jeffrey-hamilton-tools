@@ -9,6 +9,7 @@ import {
   EyeOff,
   Files,
   AudioWaveform,
+  Captions,
   type LucideIcon,
 } from "lucide-react"
 
@@ -79,5 +80,11 @@ export const tools: Tool[] = [
     desc: "Split any song into vocals, drums, bass, and music—right in your browser. No uploads.",
     icon: AudioWaveform,
     url: "https://voicerip.vercel.app",
+  },
+  {
+    name: "SubtitleLab",
+    desc: "Extract, create, and fix subtitles from video or audio—privately in your browser. No uploads.",
+    icon: Captions,
+    url: "https://subtitlelab.vercel.app",
   },
 ]
