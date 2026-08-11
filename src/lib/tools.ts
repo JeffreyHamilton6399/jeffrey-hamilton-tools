@@ -10,6 +10,7 @@ import {
   Files,
   AudioWaveform,
   Captions,
+  QrCode,
   type LucideIcon,
 } from "lucide-react"
 
@@ -86,5 +87,11 @@ export const tools: Tool[] = [
     desc: "Extract, create, and fix subtitles from video or audio—privately in your browser. No uploads.",
     icon: Captions,
     url: "https://subtitlelab.vercel.app",
+  },
+  {
+    name: "QRForge",
+    desc: "Generate QR codes instantly. Customize colors, add a logo, export PNG or SVG—100% client-side.",
+    icon: QrCode,
+    url: "https://qrforge-tau.vercel.app",
   },
 ]
