@@ -1,17 +1,20 @@
 import { JHLogo } from "@/components/jh-logo"
 import { HeaderMenu } from "@/components/header-menu"
 import { ToolCard } from "@/components/tool-card"
+import { SiteFooter } from "@/components/site-footer"
 import { tools } from "@/lib/tools"
 
 export default function Home() {
   return (
     <div className="flex h-dvh flex-col overflow-hidden">
-      <header className="flex h-14 shrink-0 items-center justify-between border-b px-4">
-        <div className="flex items-center gap-2.5">
+      <header className="flex h-12 shrink-0 items-center justify-between border-b px-3 sm:px-4">
+        <div className="flex items-center gap-2">
           <JHLogo />
-          <div className="flex flex-col leading-tight">
-            <span className="text-sm font-bold">Jeffrey Hamilton</span>
-            <span className="text-xs text-muted-foreground">
+          <div className="flex flex-col leading-none">
+            <span className="text-sm font-semibold tracking-tight">
+              Jeffrey Hamilton
+            </span>
+            <span className="hidden text-[10px] text-muted-foreground sm:block">
               Privacy-first web tools
             </span>
           </div>
@@ -29,9 +32,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="flex h-8 shrink-0 items-center justify-center px-4 text-xs text-muted-foreground">
-        <span>V1 · Jeffrey Hamilton</span>
-      </footer>
+      <SiteFooter />
     </div>
   )
 }

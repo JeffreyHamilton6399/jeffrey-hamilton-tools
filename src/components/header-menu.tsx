@@ -5,6 +5,7 @@ import { Github, Heart, Moon, Settings, Shield, Sun, FileText } from "lucide-rea
 import { useTheme } from "next-themes"
 
 import { Button } from "@/components/ui/button"
+import { FeedbackButton } from "@/components/feedback-button"
 import {
   Dialog,
   DialogContent,
@@ -36,15 +37,17 @@ export function HeaderMenu() {
   const isDark = mounted && resolvedTheme === "dark"
 
   return (
-    <div className="flex items-center gap-1">
+    <div className="flex items-center gap-1.5">
+      <FeedbackButton />
       <Button
         asChild
+        variant="outline"
         size="sm"
-        className="rounded-full bg-rose-500 text-white shadow-xs hover:bg-rose-600 dark:bg-rose-500 dark:hover:bg-rose-600"
+        className="h-7 gap-1.5 rounded-full border-rose-200 px-3 text-xs font-medium text-rose-600 hover:bg-rose-50 hover:text-rose-700 dark:border-rose-500/30 dark:text-rose-400 dark:hover:bg-rose-950/40 dark:hover:text-rose-300"
       >
         <a href={DONATE_URL} target="_blank" rel="noopener noreferrer">
-          <Heart className="size-4" />
-          Donate
+          <Heart className="size-3.5" />
+          <span className="hidden sm:inline">Donate</span>
         </a>
       </Button>
 
@@ -53,7 +56,7 @@ export function HeaderMenu() {
           <Button
             variant="ghost"
             size="icon"
-            className="size-9 rounded-full text-muted-foreground hover:text-foreground"
+            className="size-7 rounded-full text-muted-foreground hover:text-foreground"
             aria-label="Settings menu"
           >
             <Settings className="size-4" />
