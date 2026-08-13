@@ -1,13 +1,15 @@
 <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-  <rect x="1" y="1" width="30" height="30" rx="8" fill="#111111" />
-  <text
-    x="16"
-    y="21.5"
-    text-anchor="middle"
-    fill="#fafafa"
-    font-size="13"
-    font-weight="700"
-    font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif"
-    letter-spacing="-0.3"
-  >JH</text>
+  <style>
+    .badge { fill: #111111; }
+    .tile { fill: #fafafa; }
+    @media (prefers-color-scheme: dark) {
+      .badge { fill: #fafafa; }
+      .tile { fill: #111111; }
+    }
+  </style>
+  <rect x="1" y="1" width="30" height="30" rx="8" class="badge" />
+  <rect x="7.25" y="7.25" width="7.5" height="7.5" rx="2" class="tile" />
+  <rect x="17.25" y="7.25" width="7.5" height="7.5" rx="2" class="tile" />
+  <rect x="7.25" y="17.25" width="7.5" height="7.5" rx="2" class="tile" />
+  <rect x="17.25" y="17.25" width="7.5" height="7.5" rx="2" fill="#10b981" />
 </svg>
