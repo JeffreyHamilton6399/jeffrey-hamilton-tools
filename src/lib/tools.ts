@@ -11,6 +11,7 @@ import {
   AudioWaveform,
   Captions,
   QrCode,
+  Table2,
   type LucideIcon,
 } from "lucide-react"
 
@@ -93,5 +94,11 @@ export const tools: Tool[] = [
     desc: "Generate QR codes instantly. Customize colors, add a logo, export PNG or SVG—100% client-side.",
     icon: QrCode,
     url: "https://qrforge-tau.vercel.app",
+  },
+  {
+    name: "Cleansheet",
+    desc: "Clean up a messy CSV: dedupe rows, trim, split and merge columns, export to JSON. No uploads.",
+    icon: Table2,
+    url: "https://cleansheet-seven.vercel.app",
   },
 ]
