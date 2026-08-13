@@ -12,6 +12,7 @@ import {
   Captions,
   QrCode,
   Table2,
+  UserSquare,
   type LucideIcon,
 } from "lucide-react"
 
@@ -100,5 +101,11 @@ export const tools: Tool[] = [
     desc: "Clean up a messy CSV: dedupe rows, trim, split and merge columns, export to JSON. No uploads.",
     icon: Table2,
     url: "https://cleansheet-seven.vercel.app",
+  },
+  {
+    name: "IDPhoto",
+    desc: "Passport photos cropped to the official head-size rules, with a printable sheet. Free, no uploads.",
+    icon: UserSquare,
+    url: "https://idphoto-six.vercel.app",
   },
 ]
