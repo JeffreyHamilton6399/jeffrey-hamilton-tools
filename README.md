@@ -35,6 +35,7 @@ cards that link out to each live deployment.
 | Cleansheet  | Clean up a messy CSV. Export to JSON.            | https://cleansheet-seven.vercel.app  |
 | IDPhoto     | Passport photos cropped to official specs.       | https://idphoto-six.vercel.app       |
 | Unmark      | Find and remove hidden marks in text and files.  | https://unmark-ebon.vercel.app       |
+| VidGrab     | Download direct links and .m3u8 streams, then trim. | https://vidgrab-beta.vercel.app   |
 
 ## Tech stack
 

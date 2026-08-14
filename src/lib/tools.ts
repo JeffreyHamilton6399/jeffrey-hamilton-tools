@@ -14,6 +14,7 @@ import {
   Table2,
   UserSquare,
   ScanText,
+  Download,
   type LucideIcon,
 } from "lucide-react"
 
@@ -114,5 +115,11 @@ export const tools: Tool[] = [
     desc: "Reveal invisible characters and hidden metadata in text and files, then strip them out. No uploads.",
     icon: ScanText,
     url: "https://unmark-ebon.vercel.app",
+  },
+  {
+    name: "VidGrab",
+    desc: "Download direct video links and .m3u8 streams, then trim them or pull the audio. No uploads.",
+    icon: Download,
+    url: "https://vidgrab-beta.vercel.app",
   },
 ]
