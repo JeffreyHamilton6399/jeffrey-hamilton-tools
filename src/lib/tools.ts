@@ -13,6 +13,7 @@ import {
   QrCode,
   Table2,
   UserSquare,
+  ScanText,
   type LucideIcon,
 } from "lucide-react"
 
@@ -107,5 +108,11 @@ export const tools: Tool[] = [
     desc: "Passport photos cropped to the official head-size rules, with a printable sheet. Free, no uploads.",
     icon: UserSquare,
     url: "https://idphoto-six.vercel.app",
+  },
+  {
+    name: "Unmark",
+    desc: "Reveal invisible characters and hidden metadata in text and files, then strip them out. No uploads.",
+    icon: ScanText,
+    url: "https://unmark-ebon.vercel.app",
   },
 ]
