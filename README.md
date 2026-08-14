@@ -16,16 +16,25 @@ cards that link out to each live deployment.
 
 ## The tools
 
-| Tool       | What it does                                       | Live                                          |
-| ---------- | -------------------------------------------------- | --------------------------------------------- |
-| ShrinkRay  | Compress files in your browser. No uploads.        | https://shrink-ray.vercel.app                 |
-| ConvertIt  | Convert file formats without uploading.            | https://convertit.vercel.app                  |
-| Cutout     | Remove image backgrounds. No $40/month.            | https://cutout.vercel.app                     |
-| DevToys    | 12 developer tools in one bookmark.                | https://devtoys.vercel.app                    |
-| ExifErase  | Strip metadata from photos before sharing.         | https://exiferase.vercel.app                  |
-| LinkClean  | Strip tracking parameters from URLs.               | https://linkclean.vercel.app                  |
-| FileBeam   | Transfer files device-to-device. No server.        | https://filebeam.vercel.app                   |
-| BlurIt     | Blur faces before sharing photos.                  | https://blurit.vercel.app                     |
+`src/lib/tools.ts` is the source of truth for this list — update it there and mirror it here.
+
+| Tool        | What it does                                     | Live                                 |
+| ----------- | ------------------------------------------------ | ------------------------------------ |
+| ShrinkRay   | Compress files in your browser. No uploads.      | https://shrink-ray.vercel.app        |
+| ConvertIt   | Convert file formats without uploading.          | https://convertit-eta.vercel.app     |
+| Cutout      | Remove image backgrounds. No $40/month.          | https://cutout-murex.vercel.app      |
+| DevToys     | 40 developer tools in one bookmark.              | https://devtoys-nu.vercel.app        |
+| ExifErase   | Strip metadata from photos before sharing.       | https://exif-erase.vercel.app        |
+| LinkClean   | Strip tracking parameters from URLs.             | https://linkclean-seven.vercel.app   |
+| FileBeam    | Transfer files device-to-device. No server.      | https://filebeam-ten.vercel.app      |
+| BlurIt      | Blur faces before sharing photos.                | https://blurit-lime.vercel.app       |
+| MergePDF    | Merge, split and rearrange PDF pages.            | https://merge-pdf-bice.vercel.app    |
+| VoiceRip    | Split songs into vocals, drums and bass.         | https://voicerip.vercel.app          |
+| SubtitleLab | Extract, create and fix subtitles.               | https://subtitlelab.vercel.app       |
+| QRForge     | Generate custom QR codes. PNG or SVG.            | https://qrforge-tau.vercel.app       |
+| Cleansheet  | Clean up a messy CSV. Export to JSON.            | https://cleansheet-seven.vercel.app  |
+| IDPhoto     | Passport photos cropped to official specs.       | https://idphoto-six.vercel.app       |
+| Unmark      | Find and remove hidden marks in text and files.  | https://unmark-ebon.vercel.app       |
 
 ## Tech stack
 
