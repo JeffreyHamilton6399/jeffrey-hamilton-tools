@@ -15,7 +15,7 @@ export default function Home() {
               Jeffrey Hamilton
             </span>
             <span className="hidden text-[10px] text-muted-foreground sm:block">
-              Privacy-first web tools
+              Small browser tools
             </span>
           </div>
         </div>

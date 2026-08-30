@@ -11,5 +11,5 @@
   <rect x="7.25" y="7.25" width="7.5" height="7.5" rx="2" class="tile" />
   <rect x="17.25" y="7.25" width="7.5" height="7.5" rx="2" class="tile" />
   <rect x="7.25" y="17.25" width="7.5" height="7.5" rx="2" class="tile" />
-  <rect x="17.25" y="17.25" width="7.5" height="7.5" rx="2" fill="#10b981" />
+  <rect x="17.25" y="17.25" width="7.5" height="7.5" rx="2" fill="#737373" />
 </svg>

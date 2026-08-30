@@ -1,92 +1,81 @@
-# Jeffrey Hamilton — Privacy-first web tools
+# Jeffrey Hamilton
 
-A single-page portfolio that showcases all of Jeffrey Hamilton's privacy-first web
-tools in one place. Every tool runs entirely in your browser — no uploads, no
-servers, no tracking. The site itself is the brand: a flat, minimal grid of tool
-cards that link out to each live deployment.
+The index page for sixteen small web tools. One screen, a grid of cards, each
+card links out to a live deployment.
 
-## What it is
-
-- Single page, single screen (on desktop).
-- A grid of tool cards. Each card has an icon, name, one-line description, and an
-  "Open →" link that opens the tool in a new tab.
-- Dark mode support (system-aware, with a manual toggle).
-- Mobile responsive — the grid collapses to a single column on small screens.
-- Flat design. No gradients, no decorative blobs, no sign-up walls, no analytics.
+Every tool it links to does its work in the browser tab rather than on a server.
 
 ## The tools
 
-`src/lib/tools.ts` is the source of truth for this list — update it there and mirror it here.
+`src/lib/tools.ts` is the source of truth for this list.
 
-| Tool        | What it does                                     | Live                                 |
-| ----------- | ------------------------------------------------ | ------------------------------------ |
-| ShrinkRay   | Compress files in your browser. No uploads.      | https://shrink-ray.vercel.app        |
-| ConvertIt   | Convert file formats without uploading.          | https://convertit-eta.vercel.app     |
-| Cutout      | Remove image backgrounds. No $40/month.          | https://cutout-murex.vercel.app      |
-| DevToys     | 40 developer tools in one bookmark.              | https://devtoys-nu.vercel.app        |
-| ExifErase   | Strip metadata from photos before sharing.       | https://exif-erase.vercel.app        |
-| LinkClean   | Strip tracking parameters from URLs.             | https://linkclean-seven.vercel.app   |
-| FileBeam    | Transfer files device-to-device. No server.      | https://filebeam-ten.vercel.app      |
-| BlurIt      | Blur faces before sharing photos.                | https://blurit-lime.vercel.app       |
-| MergePDF    | Merge, split and rearrange PDF pages.            | https://merge-pdf-bice.vercel.app    |
-| VoiceRip    | Split songs into vocals, drums and bass.         | https://voicerip.vercel.app          |
-| SubtitleLab | Extract, create and fix subtitles.               | https://subtitlelab.vercel.app       |
-| QRForge     | Generate custom QR codes. PNG or SVG.            | https://qrforge-tau.vercel.app       |
-| Cleansheet  | Clean up a messy CSV. Export to JSON.            | https://cleansheet-seven.vercel.app  |
-| IDPhoto     | Passport photos cropped to official specs.       | https://idphoto-six.vercel.app       |
-| Unmark      | Find and remove hidden marks in text and files.  | https://unmark-ebon.vercel.app       |
-| VidGrab     | Download direct links and .m3u8 streams, then trim. | https://vidgrab-beta.vercel.app   |
+| Tool        | What it does                                              | Live                                |
+| ----------- | --------------------------------------------------------- | ----------------------------------- |
+| ShrinkRay   | Make a file smaller                                        | https://shrink-ray.vercel.app       |
+| ConvertIt   | Change a file from one format to another                   | https://convertit-eta.vercel.app    |
+| Cutout      | Take the background off a photo                            | https://cutout-murex.vercel.app     |
+| DevToys     | Forty small developer tools on one page                    | https://devtoys-nu.vercel.app       |
+| ExifErase   | Strip metadata out of a photo                              | https://exif-erase.vercel.app       |
+| LinkClean   | Strip tracking parameters from a URL                       | https://linkclean-seven.vercel.app  |
+| FileBeam    | Send a file straight to another device                     | https://filebeam-ten.vercel.app     |
+| BlurIt      | Blur faces and details in a photo                          | https://blurit-lime.vercel.app      |
+| MergePDF    | Merge, split and reorder PDF pages                         | https://merge-pdf-bice.vercel.app   |
+| VoiceRip    | Split a song into vocals, drums and bass                   | https://voicerip.vercel.app         |
+| SubtitleLab | Extract, write and fix subtitles                           | https://subtitlelab.vercel.app      |
+| QRForge     | Make a QR code                                             | https://qrforge-tau.vercel.app      |
+| Cleansheet  | Clean up a messy CSV                                       | https://cleansheet-seven.vercel.app |
+| IDPhoto     | Crop a passport photo to spec                              | https://idphoto-six.vercel.app      |
+| Unmark      | Find hidden characters and metadata                        | https://unmark-ebon.vercel.app      |
+| VidGrab     | Download a video, then trim it                             | https://vidgrab-beta.vercel.app     |
 
-## Tech stack
+## The page itself
 
-- [Next.js 16](https://nextjs.org/) with the App Router
-- [TypeScript](https://www.typescriptlang.org/) (strict)
-- [Tailwind CSS 4](https://tailwindcss.com/) + [shadcn/ui](https://ui.shadcn.com/) (New York)
-- [lucide-react](https://lucide.dev/) icons
-- [next-themes](https://github.com/pacocoursey/next-themes) for dark mode
-- Client-side only — static site, no backend
-- [bun](https://bun.sh/) as the package manager
+One screen on desktop, collapsing to a single column on a phone. Cards carry an
+icon, a name, a line about what the tool does, and a link that opens it in a new
+tab. Dark mode follows the system with a manual override.
 
-## Project structure
+Flat design. Nothing on the page moves, and nothing asks you to sign up.
 
-```
-src/
-  app/
-    layout.tsx        # Root layout: fonts, metadata, ThemeProvider
-    page.tsx          # The portfolio: header + tool grid + footer
-    globals.css       # Tailwind theme + design tokens
-  components/
-    jh-logo.tsx       # "JH" monogram (flat SVG)
-    tool-card.tsx     # Tool card (anchor, hover lift, emerald open link)
-    theme-provider.tsx
-    theme-toggle.tsx
-  lib/
-    tools.ts          # Tool data (name, desc, icon, url)
-public/
-    favicon.svg       # JH monogram favicon
-```
-
-## Develop
+## Running it
 
 ```bash
 bun install
 bun run dev
 ```
 
-Then open the preview at http://localhost:3000.
+http://localhost:3000.
 
-## Deploy
+## Built with
 
-This is a static, client-only Next.js app with no environment variables.
+Next.js 16 (App Router), TypeScript in strict mode, Tailwind CSS 4, shadcn/ui,
+lucide-react and next-themes. Static, no backend. Package manager is bun.
 
-1. Push the repo to GitHub.
-2. Import the repository into [Vercel](https://vercel.com/).
-3. Framework preset: **Next.js**. Build command: `next build`. No env vars needed.
-4. Deploy. Point a custom domain (e.g. `jeffreyhamilton.dev`) at the project if you
-   like — this site is intended to be the main domain.
+## Layout
 
-## Author
+```
+src/
+  app/
+    layout.tsx        root layout: fonts, metadata, ThemeProvider
+    page.tsx          header, tool grid, footer
+    globals.css       Tailwind theme and design tokens
+  components/
+    jh-logo.tsx       JH monogram
+    tool-card.tsx
+    theme-provider.tsx
+    theme-toggle.tsx
+  lib/
+    tools.ts          name, description, icon, url
+public/
+    favicon.svg
+```
 
-**Jeffrey Hamilton**
-GitHub: [@JeffreyHamilton6399](https://github.com/JeffreyHamilton6399)
-Donate: [buymeacoffee.com/jeffreyscof](https://buymeacoffee.com/jeffreyscof)
+## Deploying
+
+Import the repo on Vercel with the Next.js preset. `next build`, no environment
+variables. This one is meant to sit on the apex domain, so point a custom domain
+at it if you have one.
+
+---
+
+Jeffrey Hamilton · [@JeffreyHamilton6399](https://github.com/JeffreyHamilton6399) ·
+[buy me a coffee](https://buymeacoffee.com/jeffreyscof)

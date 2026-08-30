@@ -1,8 +1,8 @@
 import { cn } from "@/lib/utils"
 
 /**
- * Hub mark: a rounded badge holding a 2×2 grid of tiles — a collection of
- * tools — with one tile in the emerald accent the tools share.
+ * Hub mark: a rounded badge holding a 2×2 grid of tiles - a collection of
+ * tools - with one tile in the emerald accent the tools share.
  */
 export function JHLogo({ className }: { className?: string }) {
   return (
@@ -10,7 +10,7 @@ export function JHLogo({ className }: { className?: string }) {
       viewBox="0 0 32 32"
       className={cn("size-8", className)}
       role="img"
-      aria-label="Jeffrey Hamilton — privacy-first web tools"
+      aria-label="Jeffrey Hamilton, privacy-first web tools"
       xmlns="http://www.w3.org/2000/svg"
     >
       <rect
@@ -24,7 +24,7 @@ export function JHLogo({ className }: { className?: string }) {
       <rect x="7.25" y="7.25" width="7.5" height="7.5" rx="2" className="fill-background" />
       <rect x="17.25" y="7.25" width="7.5" height="7.5" rx="2" className="fill-background" />
       <rect x="7.25" y="17.25" width="7.5" height="7.5" rx="2" className="fill-background" />
-      <rect x="17.25" y="17.25" width="7.5" height="7.5" rx="2" className="fill-emerald-500" />
+      <rect x="17.25" y="17.25" width="7.5" height="7.5" rx="2" className="fill-neutral-500" />
     </svg>
   )
 }

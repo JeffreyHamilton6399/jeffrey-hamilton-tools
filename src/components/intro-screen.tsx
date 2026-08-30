@@ -58,11 +58,10 @@ export function IntroScreen() {
       <JHLogo className="size-14" />
       <div className="flex flex-col items-center gap-2">
         <p className="text-lg font-semibold tracking-tight">
-          Free <span className="text-muted-foreground">·</span> Open Source{" "}
-          <span className="text-muted-foreground">·</span> Private
+          Jeffrey Hamilton
         </p>
         <p className="text-sm text-muted-foreground">
-          Privacy-first web tools by Jeffrey Hamilton
+          Small web tools. They run in your browser.
         </p>
       </div>
     </div>

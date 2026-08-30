@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter_Tight, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { IntroScreen } from "@/components/intro-screen";
@@ -10,48 +10,35 @@ import { IntroScreen } from "@/components/intro-screen";
 // fades it out.
 const introScript = `try{if(localStorage.getItem('jh_intro_seen_v1')==='1'){document.documentElement.classList.add('intro-done')}}catch(e){}`;
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const sans = Inter_Tight({
+  variable: "--font-app-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const mono = JetBrains_Mono({
+  variable: "--font-app-mono",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Jeffrey Hamilton — Privacy-first web tools",
+  title: "Jeffrey Hamilton",
   description:
-    "A portfolio of privacy-first web tools by Jeffrey Hamilton. Compress, convert, edit, and transfer files entirely in your browser. No uploads, no servers, no tracking.",
-  keywords: [
-    "privacy-first",
-    "web tools",
-    "browser tools",
-    "file compression",
-    "image background remover",
-    "exif remover",
-    "url cleaner",
-    "Jeffrey Hamilton",
-  ],
-  authors: [
-    { name: "Jeffrey Hamilton", url: "https://github.com/JeffreyHamilton6399" },
-  ],
-  creator: "Jeffrey Hamilton",
+    "Sixteen small web tools that run in the browser tab: compression, format conversion, PDF and CSV editing, metadata stripping, device-to-device transfer, QR codes.",
+  authors: [{ name: "Jeffrey Hamilton" }],
   icons: {
     icon: "/favicon.svg",
   },
   openGraph: {
-    title: "Jeffrey Hamilton — Privacy-first web tools",
+    title: "Jeffrey Hamilton",
     description:
-      "A portfolio of privacy-first web tools. Compress, convert, edit, and transfer files entirely in your browser. No uploads, no tracking.",
+      "Sixteen small web tools that run in the browser tab.",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Jeffrey Hamilton — Privacy-first web tools",
+    title: "Jeffrey Hamilton",
     description:
-      "A portfolio of privacy-first web tools. No uploads, no servers, no tracking.",
+      "Sixteen small web tools that run in the browser tab.",
   },
 };
 
@@ -68,7 +55,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
+        className={`${sans.variable} ${mono.variable} antialiased bg-background text-foreground`}
       >
         <ThemeProvider
           attribute="class"
