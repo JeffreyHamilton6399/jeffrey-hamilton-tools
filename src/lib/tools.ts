@@ -15,6 +15,7 @@ import {
   UserSquare,
   ScanText,
   Download,
+  MoonStar,
   type LucideIcon,
 } from "lucide-react"
 
@@ -121,5 +122,11 @@ export const tools: Tool[] = [
     desc: "Download a direct video link or an .m3u8 stream, then trim it.",
     icon: Download,
     url: "https://vidgrab-beta.vercel.app",
+  },
+  {
+    name: "NoDoze",
+    desc: "Keep your computer awake. Stop it with a key you choose.",
+    icon: MoonStar,
+    url: "https://nodoze.vercel.app",
   },
 ]

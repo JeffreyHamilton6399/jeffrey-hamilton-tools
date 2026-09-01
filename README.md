@@ -1,6 +1,6 @@
 # Jeffrey Hamilton
 
-The index page for sixteen small web tools. One screen, a grid of cards, each
+The index page for seventeen small web tools. One screen, a grid of cards, each
 card links out to a live deployment.
 
 Every tool it links to does its work in the browser tab rather than on a server.
@@ -27,6 +27,7 @@ Every tool it links to does its work in the browser tab rather than on a server.
 | IDPhoto     | Crop a passport photo to spec                              | https://idphoto-six.vercel.app      |
 | Unmark      | Find hidden characters and metadata                        | https://unmark-ebon.vercel.app      |
 | VidGrab     | Download a video, then trim it                             | https://vidgrab-beta.vercel.app     |
+| NoDoze      | Keep your computer awake                                   | https://nodoze.vercel.app           |
 
 ## The page itself
 

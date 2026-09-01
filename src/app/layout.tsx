@@ -23,7 +23,7 @@ const mono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Jeffrey Hamilton",
   description:
-    "Sixteen small web tools that run in the browser tab: compression, format conversion, PDF and CSV editing, metadata stripping, device-to-device transfer, QR codes.",
+    "Seventeen small web tools that run in the browser tab: compression, format conversion, PDF and CSV editing, metadata stripping, device-to-device transfer, QR codes.",
   authors: [{ name: "Jeffrey Hamilton" }],
   icons: {
     icon: "/favicon.svg",
@@ -31,14 +31,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Jeffrey Hamilton",
     description:
-      "Sixteen small web tools that run in the browser tab.",
+      "Seventeen small web tools that run in the browser tab.",
     type: "website",
   },
   twitter: {
     card: "summary",
     title: "Jeffrey Hamilton",
     description:
-      "Sixteen small web tools that run in the browser tab.",
+      "Seventeen small web tools that run in the browser tab.",
   },
 };
 
