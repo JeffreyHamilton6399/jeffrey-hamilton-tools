@@ -127,6 +127,6 @@ export const tools: Tool[] = [
     name: "NoDoze",
     desc: "Keep your computer awake. Stop it with a key you choose.",
     icon: MoonStar,
-    url: "https://nodoze.vercel.app",
+    url: "https://nodoze-iota.vercel.app",
   },
 ]
