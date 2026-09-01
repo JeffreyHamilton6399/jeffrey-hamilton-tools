@@ -15,7 +15,7 @@ import {
   UserSquare,
   ScanText,
   Download,
-  MoonStar,
+  Coffee,
   type LucideIcon,
 } from "lucide-react"
 
@@ -126,7 +126,7 @@ export const tools: Tool[] = [
   {
     name: "NoDoze",
     desc: "Keep your computer awake. Stop it with a key you choose.",
-    icon: MoonStar,
+    icon: Coffee,
     url: "https://nodoze-iota.vercel.app",
   },
 ]
