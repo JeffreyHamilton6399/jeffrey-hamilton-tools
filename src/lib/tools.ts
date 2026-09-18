@@ -16,6 +16,7 @@ import {
   ScanText,
   Download,
   Coffee,
+  CreditCard,
   type LucideIcon,
 } from "lucide-react"
 
@@ -128,5 +129,11 @@ export const tools: Tool[] = [
     desc: "Keep your computer awake. Stop it with a key you choose.",
     icon: Coffee,
     url: "https://nodoze-iota.vercel.app",
+  },
+  {
+    name: "CardTally",
+    desc: "Scan a gift card. Get its number, PIN and balance page, and keep a running total.",
+    icon: CreditCard,
+    url: "https://cardtally.vercel.app",
   },
 ]
