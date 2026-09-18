@@ -132,7 +132,7 @@ export const tools: Tool[] = [
   },
   {
     name: "CardTally",
-    desc: "Scan a gift card. Get its number, PIN and balance page, and keep a running total.",
+    desc: "Scan a gift card and go straight to its balance page, digits already copied.",
     icon: CreditCard,
     url: "https://cardtally.vercel.app",
   },
